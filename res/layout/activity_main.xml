@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Google URL Shortner"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LongUrl"
+        android:layout_gravity="center"
+        android:hint="Enter the long URL" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="#4285f4"
+        android:text="Shorten URL"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ShortUrl"
+        android:name="ShortURL"
+        android:autoLink="all"
+        android:textIsSelectable="true"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+</LinearLayout>
